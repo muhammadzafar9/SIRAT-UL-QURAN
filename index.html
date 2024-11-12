@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRAT-UL-QURAN</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS v5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- AOS animation library -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+
+<body>
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn"
+        class="fixed bottom-4 right-4 z-50 rounded-full bg-green-600 p-3 text-white shadow-lg transition-opacity duration-300 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </button>
+
+
+
+    <!-- Improved Navbar -->
+    <nav class="bg-white shadow-md p-3 fixed-top">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="flex items-center ml-4">
+                <img src="./images/logo.jpg" alt="Logo" class="h-10 w-auto mr-3"> <!-- Replace with actual logo path -->
+                <span class="text-xl font-semibold text-black">SIRAT-UL-QURAN</span>
+            </div>
+
+            <!-- Navbar Links (Desktop) -->
+            <div class="hidden md:flex space-x-8 font-semibold mr-4">
+                <a href="#" class="text-green-600 font-bold hover:underline underline-offset-4">Home</a>
+                <a href="#AboutUs" class="text-gray-700 hover:text-green-600">About</a>
+                <a href="#OurServices" class="text-gray-700 hover:text-green-600">Services</a>
+                <a href="#" class="text-gray-700 hover:text-green-600">Courses</a>
+                <a href="#" class="text-gray-700 hover:text-green-600">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menuButton" type="button" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden">
+            <div class="p-4 space-y-2">
+                <a href="#" class="block text-green-600 font-bold hover:underline underline-offset-4">Home</a>
+                <a href="#" class="block text-gray-700 hover:text-green-600">About</a>
+                <a href="#" class="block text-gray-700 hover:text-green-600">Services</a>
+                <a href="#" class="block text-gray-700 hover:text-green-600">Courses</a>
+                <a href="#" class="block text-gray-700 hover:text-green-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- close navbar  -->
+
+
+    <!-- carousel  -->
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1616422840391-fa670d4b2ae7?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="Holy Quran picture">
+            </div>
+            <div class="carousel-item">
+                <img src="https://plus.unsplash.com/premium_photo-1678558447199-65e6e14f1ae4?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="Kid reciting Quran">
+            </div>
+            <div class="carousel-item">
+                <img src="https://plus.unsplash.com/premium_photo-1677965886038-eed49ebd2c02?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="Mosque picture">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1587617425953-9075d28b8c46?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="Islamic picture">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1567215378181-6ecf3590646f?q=80&w=3903&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="Mosque picture 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <!-- close carosule  -->
+
+
+    <!-- section 2 -->
+    <!-- Section  hero-->
+    <section class="container mx-auto px-4 py-16 lg:flex lg:items-center lg:space-x-10">
+        <!-- Left Column (Image) -->
+        <div class="flex justify-center lg:w-1/2  " data-aos="fade-up" data-aos-delay="1000">
+            <img src="https://plus.unsplash.com/premium_photo-1677621984167-da2b898758ab?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Person reading Quran" class="rounded-lg shadow-lg object-cover max-w-full h-auto">
+        </div>
+
+        <!-- Right Column (Text) -->
+        <div class="mt-8 lg:mt-0 lg:w-1/2">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900" data-aos="fade-down" data-aos-delay="2000" >
+                Every Muslim has an <span class="text-green-600">obligation to seek knowledge.</span>
+            </h2>
+            <p class="mt-4 text-gray-700 text-2xl" data-aos="fade-right"  data-aos-delay="2000">
+                Every Muslim has a duty to seek knowledge, as it is a fundamental aspect of their faith. This pursuit
+                enriches their understanding of the world and strengthens their relationship with Allah. By acquiring
+                knowledge in various fields, Muslims fulfill their obligation to contribute positively to society and
+                lead a life aligned with Islamic principles.
+            </p>
+
+            <!-- Buttons -->
+            <div class="container mx-auto px-4 py-8" >
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" >
+                    <!-- First Button -->
+                    <a href="#" 
+                        class= "inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-green-500 hover:bg-green-600 text-white text-base font-semibold rounded-full transition-all duration-300 min-w-[160px]" data-aos="fade-left" data-aos-delay="1000">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-4 h-4 ml-2" data-aos-delay="4000">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+
+                    <!-- Second Button -->
+                    <a href="#" 
+                        class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-green-500 hover:bg-green-600 text-white text-base font-semibold rounded-full transition-all duration-300 min-w-[160px]" data-aos="fade-right" data-aos-delay="1000" >
+                        Watch Videos
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-4 h-4 ml-2" data-aos-delay="4000">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br> <br> <br> <br> 
+
+
+    <!-- About Us Section -->
+    <section  id="AboutUs" class="container mx-auto px-4  py-4 lg:flex lg:items-center">
+        <!-- Left Column (Text) -->
+        <div class="lg:w-1/2">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 mt-4 text-center" data-aos="flip-left"  data-aos-delay="1000">About Us</h2>
+            <div class="w-16 h-1 bg-green-600 mb-6 mx-auto"></div>
+            <p class="text-gray-700  text-2xl mb-6" data-aos="flip-up"  data-aos-delay="2000">
+                "About Us - SIRAT-UL-QURAN" introduces you to our mission of spreading the profound wisdom and teachings
+                of the Quran. We are dedicated to providing insightful resources and fostering a deeper understanding of
+                Islamic principles. Join us on this enlightening journey to explore the timeless guidance and spiritual
+                enrichment offered by the Quran.
+            </p>
+            <a href="#"
+                class="inline-flex items-center px-5 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition" data-aos="flip-down"  data-aos-delay="2000">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-5 h-5 ml-2" data-aos="flip-left"  data-aos-delay="2000">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Right Column (Image) -->
+        <div class="mt-8 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end">
+            <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Open Quran with prayer beads" class="rounded-lg shadow-lg object-cover max-w-full h-auto" data-aos="flip-left"  data-aos-delay="1000">
+        </div>
+    </section>
+<br> <br> 
+<!-- our services section  -->
+
+    <section  class="container ">
+        <br> <br> <br>
+        <div id="OurServices"     class="container mx-auto px-4 justify-center bg-color" data-aos="flip-up"  data-aos-delay="2000">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 mx-auto text-center" >Our Services</h2>
+
+            <div class="flex justify-center mb-10" >
+                <div class="w-16 h-1 bg-green-500 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 pattern-bg text-center hover:shadow-xl transition-shadow duration-300" data-aos="fade-in"  data-aos-delay="2000">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4" data-aos="fade-down"
+                    data-aos-easing="linear">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 text-green-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l7-3 7 3V3H5z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Quran Reading (Nazra)</h3>
+                    <p class="text-gray-600 mb-4">Teaching to read Quran with correct pronunciation and tajweed.</p>
+                    <a href="#" class="text-green-500 font-semibold hover:underline">Read More →</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 pattern-bg text-center hover:shadow-xl transition-shadow duration-300"  data-aos="flip-down" data-aos-delay="2000">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4" >
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 text-green-500">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8.25 6.75h7.5m-7.5 3h4.5m-7.5 3h7.5m-7.5 3h4.5" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Hadith School</h3>
+                    <p class="text-gray-600 mb-4">Join us in nurturing a generation grounded in faith, wisdom, and moral
+                        integrity.</p>
+                    <a href="#" class="text-green-500 font-semibold hover:underline">Read More →</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 pattern-bg text-center hover:shadow-xl transition-shadow duration-300" data-aos="flip-down" data-aos-delay="3000">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4" >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 text-green-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5l-4.5 4.5-2-2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Tafseer (Quran Interpretation)</h3>
+                    <p class="text-gray-600 mb-4">Understanding the meaning and significance of the verses of the Quran.
+                    </p>
+                    <a href="#" class="text-green-500 font-semibold hover:underline">Read More →</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 pattern-bg text-center hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in-down" data-aos-delay="2000">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"  >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 text-green-500">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6V3m0 15v3M3 12H6m12 0h3M9.636 9.636L7.5 7.5m9 9-2.136-2.136m0-7.728L16.5 7.5m-9 9 2.136-2.136" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Islamic Studies</h3>
+                    <p class="text-gray-600 mb-4">Understanding and implementing basic knowledge of Deen, Islamic
+                        values, and Sunnah.</p>
+                    <a href="#" class="text-green-500 font-semibold hover:underline">Read More →</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <br> <br> <br>
+
+
+    <!-- OUR LATEST COURSES  -->
+    <section >
+        <div class="container mx-auto px-4 py-8 ">
+            <div class="mt-8"><h2 class="text-4xl font-bold text-center mb-4" data-aos="flip-left"  data-aos-delay="2000">Our Courses</h2></div>
+            <div class="w-24 h-1 bg-green-500 mx-auto mb-12"></div>
+
+            <div class=" container row g-4">
+                <!-- Learn Quran Online Card -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="flip-down" data-aos-delay="3000">
+                    <div class="card h-100 shadow-sm hover:shadow-md transition-shadow duration-300" >
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-1 text-center">
+                                <img src="https://cdn.prod.website-files.com/643b936c6dea09e4cd3a9714/645367810235d07772e54f6f_Image-3.jpg"
+                                    alt="Quran with prayer beads" class="img-fluid mx-auto"
+                                    style="max-height: 200px; object-fit: contain;">
+                            </div>
+                            <h3 class="card-title text-2xl font-bold mb-3">Learn Quran Online</h3>
+                            <p class="card-text text-gray-600 mb-4 flex-grow">
+                                Discover the beauty and wisdom of the Quran through our online learning platform.
+                                Join our interactive classes to deepen your understanding and enhance your
+                                recitation skills from the comfort of your home.
+                            </p>
+                            <button class="btn btn-success w-100 rounded-pill py-2 mt-auto">Enroll Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learn Hadith Card -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="flip-right" data-aos-delay="3000">
+                    <div class="card h-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-4 text-center">
+                                <img src="https://cdn.prod.website-files.com/643b936c6dea09e4cd3a9714/6453624fddc6694aff60521f_Image.jpg"
+                                    alt="Illuminated Hadith book" class="img-fluid mx-auto"
+                                    style="max-height: 200px; object-fit: contain;">
+                            </div>
+                            <h3 class="card-title text-2xl font-bold mb-3">Learn Hadith - Change Your Life</h3>
+                            <p class="card-text text-gray-600 mb-4 flex-grow">
+                                Explore the profound teachings of Hadith and their relevance to everyday life.
+                                By incorporating these timeless principles, you can foster personal growth,
+                                strengthen your faith, and transform your daily interactions.
+                            </p>
+                            <button class="btn btn-success w-100 rounded-pill py-2 mt-auto">Enroll Now →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pray Properly Card -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="3000" >
+                    <div class="card h-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-4 text-center">
+                                <img src="https://cdni.iconscout.com/illustration/premium/thumb/muslim-people-perform-tarawih-prayers-illustration-download-in-svg-png-gif-file-formats--reading-quran-mosque-eid-prayer-holy-place-ramadan-mubarak-pack-culture-religion-festivals-illustrations-4203819.png?f=webp"
+                                    alt="Person praying with mosque background" class="img-fluid mx-auto"
+                                    style="max-height: 200px; object-fit: contain;">
+                            </div>
+                            <h3 class="card-title text-2xl font-bold mb-3">Pray Properly</h3>
+                            <p class="card-text text-gray-600 mb-4 flex-grow">
+                                Mastering the art of prayer can deepen your connection with Allah and enrich
+                                your spiritual journey. Through proper prayer, you cultivate mindfulness,
+                                gratitude, and a sense of peace that can transform your daily life.
+                            </p>
+                            <button class="btn btn-success w-100 rounded-pill py-2 mt-auto">Enroll Now →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12" data-aos="flip-left" data-aos-delay="3000">
+                <button class="btn btn-success btn-lg rounded-pill px-5 py-3">Explore All Courses</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- banner section -->
+
+    <!-- banner section close -->
+
+
+    <!-- contact us form -->
+    <div class="bg-[#dcfce7] mx-auto px-4 py-16 mb-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
+            <div class="md:flex">
+                <div class="md:flex-shrink-0 bg-green-600 md:w-1/3 p-8 text-white flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                        <p class="mb-4">We'd love to hear from you. Please fill out this form.</p>
+                    </div>
+                    <div>
+                        <p class="flex items-center mb-2">
+                            <svg class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            siratulquran10@gmail.com
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            03279948840
+                        </p>
+                    </div>
+                </div>
+                <div class="p-8 md:w-2/3">
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Subject</label>
+                            <select id="subject" name="subject"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                                required></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button type="submit"
+                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer  -->
+    <!-- Footer Section -->
+    <footer class="bg-[#0a0a1d] rounded-t-3xl py-12 px-4 sm:px-6 lg:px-8 py-12 mt-4 mx-auto">
+        <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Sirat-Ul-Quran Section -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Sirat-Ul-Quran</h3>
+                    <p class="mb-4 text-white">"Sirat-ul-Quran" is a profound journey through the divine revelations of
+                        the Quran,
+                        offering deep insights and spiritual guidance.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="text-white">
+                    <h3 class="text-xl  font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="text-white">
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="far fa-envelope text-gray-300"></i>
+                            <a href="mailto:siratulquran10@gmail.com"
+                                class="text-gray-300 hover:text-white">siratulquran10@gmail.com</a>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-gray-300"></i>
+                            <a href="tel:03279948840" class="text-gray-300 hover:text-white">03279948840</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stay Updated Section -->
+                <div class="text-white">
+                    <h3 class="text-xl font-bold mb-4">Stay Updated</h3>
+                    <p class="mb-4">Subscribe to our newsletter for the latest updates and offers.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-green-500/20" />
+                        <button
+                            class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-r-lg transition duration-300">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 border-t border-gray-700 pt-4">
+                <p class="text-gray-300">&copy; 2024 Sirat-Ul-Quran. All rights reserved.</p>
+            </div>
+        </div>
+    </footer> <!-- clode footer  -->
+
+
+
+
+    <!-- Bootstrap JS Bundle -->
+    <!-- Bootstrap JavaScript -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76A6bcPzS5C2dOYAJTAM5KjFGpX1t5hu3ER4ZW5eFZyfG8B5OpNV+gT56jedomZ" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- external javascript file link -->
+    <script src="javascript/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
